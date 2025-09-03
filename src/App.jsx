@@ -9,12 +9,15 @@ import Blogs from "./Pages/Blogs";
 import CommentForm from "./Components/CommentForm";
 import BlogDetails from "./Pages/SingleBlog";
 import Contact from "./Pages/Contact";
+import ScrollToTop from './Components/ScrollToTop'
+
 function App() {
   return (
     <>
       <div>
         <Navbar />
         <BrowserRouter>
+        <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
